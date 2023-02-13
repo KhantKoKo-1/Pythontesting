@@ -1,0 +1,21 @@
+class car:
+    car_model=""
+    car_brand=""
+    car_No=0
+    def __init__(self):
+        print("Car Information")
+
+    def showinfo(self):
+
+       print(self.car_model)
+       print(self.car_brand)
+       print(self.car_No)
+
+obj_car = car()
+n_model=input("Enter Car Model :")
+n_brand=input("Enter Car brand :")
+n_no=input("Enter Car NO. :")
+obj_car.car_model = n_model
+obj_car.car_brand= n_brand
+obj_car.car_No = n_no
+obj_car.showinfo()
