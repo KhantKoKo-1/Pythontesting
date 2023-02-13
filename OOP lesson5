@@ -1,0 +1,19 @@
+##This is polymorphism testing
+
+class dog:
+    def animal(self):
+
+        print("WOO")
+
+class lion:
+    def animal(self):
+
+        print("Garrrrr")
+
+def makeSound(animalType):
+    animalType.animal()
+dog_obj =dog()
+lion_obj=lion()
+
+makeSound(dog_obj)
+makeSound(lion_obj)
