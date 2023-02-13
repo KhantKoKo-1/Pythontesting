@@ -1,0 +1,21 @@
+#This is Multiple inheritance lessons
+class one:
+    def printOne(self):
+        print("Class one")
+
+class two:
+    def printTwo(self):
+        print("Class Two")
+
+class three:
+    def printThree(self):
+        print("Class Three")
+
+class sub(one,two,three) :
+    def __int__(self):
+        print("Sub class")
+
+obj = sub()
+obj.printOne()
+obj.printTwo()
+obj.printThree()
