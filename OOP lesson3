@@ -1,0 +1,20 @@
+#This is inheritance lesson
+class super:
+    name = ""
+    age = ""
+    def setuser(self,a,b):
+        self.name=a
+        self.age=b
+
+    def showoinfo(self):
+        print(self.name)
+        print(self.age)
+
+class sub(super):
+   def pp(self):
+       print("Python")
+
+obj=sub()
+print(obj.pp())
+obj.setuser("aunng",12)
+obj.showoinfo()
