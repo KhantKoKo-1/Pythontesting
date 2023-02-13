@@ -1,0 +1,15 @@
+#This is Encapsulation lesson
+class letter:
+    def __init__(self,a,b,c):
+        self.a = a #public
+        self._b = b #protected
+        self.__c = c #private
+
+    def call_value(self):
+        var = self.__c
+        return var
+
+new_object = letter("MgMg","kyawkyaww","Kaungkaung")
+print(new_object.a)
+print(new_object._b)
+print(new_object.call_value())
